@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/fragment1">
+
+    <!-- Here the BlankFragment1 class is not visible by the IDE, because it considers it parts of the feature2 module -->
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.feature.BlankFragment1"
+        tools:layout="@layout/fragment_blank">
+        <action
+            android:id="@+id/action_to_fragment2"
+            app:destination="@+id/fragment1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.feature.BlankFragment2"
+        tools:layout="@layout/fragment_blank" />
+</navigation>
