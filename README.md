@@ -14,4 +14,4 @@ This make sure all the modules can access the SafeArgs api.
 
 The problem here is that the `SharedRes/app/src/main/sharedRes/navigation/navigation_main.xml` file is designated by the IDE as part of the feature2 module. When we open the file, the feature1's components are not found.
 
-Reproduced on AS 3.3.2
+Reproduced on AS 3.3.2 and 3.4 RC 2
